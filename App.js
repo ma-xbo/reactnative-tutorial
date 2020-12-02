@@ -4,7 +4,17 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.counter}> {123}</Text>
+      <Counter />
+    </View>
+  );
+}
+
+// Eigene Komponente namens Counter
+function Counter() {
+  // Liefert JSX Code zurück -> Kann direkt aufgerufen werden
+  return (
+    <View>
+      <Text style={styles.counter}>{1}</Text>
       <Button title='Klick' onPress={() => alert('clicked')} />
     </View>
   );
