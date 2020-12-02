@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
 
     },
     counter: {
-        color: '#261926',
+        color: '#fff',
         fontSize: 82
     }
 });

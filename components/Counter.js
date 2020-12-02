@@ -10,7 +10,7 @@ export default function Counter(props) {
 
     // Liefert JSX Code zurück -> Kann direkt aufgerufen werden
     return (
-        <View style={styles.wrapper}>
+        <View style={styles.wrapper} >
             <Text style={styles.counter}>{counterValue}</Text>
             <Button title='Counter +1' onPress={() => setCounterValue(counterValue + 1)} />
         </View>
@@ -19,7 +19,7 @@ export default function Counter(props) {
 
 const styles = StyleSheet.create({
     wrapper: {
-        backgroundColor: '#9affff',
+        backgroundColor: '#7f66ff',
         alignItems: 'center',
         justifyContent: 'center',
         width: 200,
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 
     },
     counter: {
-        color: '#261926',
+        color: '#fff',
         fontSize: 82
     }
 });
