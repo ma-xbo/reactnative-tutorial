@@ -15,7 +15,7 @@ export default function Random() {
 
 // Gernerieren einer Zufallszahl
 // Math.random --> Zufallszahl zwischen 0 und <1
-// Math.floor --> 
+// Math.floor --> Rundet auf nächsten Integer ab
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }

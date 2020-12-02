@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
-// Eigene Komponente namens Counter
-// Komponente bekommt zur Laufzeit die props übergeben
-// Wird standardmäßig exportiert, um in anderen Komponenten verwendet werden zu können
 export default function Counter(props) {
-    const { startValue } = props; // Destrukturierung des Objekts props (über Name des Props)
+    // Destrukturierung des Objekts props (über Name des Props)
+    const { startValue } = props;
+    //Destrukturierung eines Arrays (useState liefert ein Array mit zwei Elmenten zurück)
     const [counterValue, setCounterValue] = useState(startValue);
 
     // Liefert JSX Code zurück -> Kann direkt aufgerufen werden
