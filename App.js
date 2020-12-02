@@ -5,7 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.counter}> {123}</Text>
-      <Button title='Klick' />
+      <Button title='Klick' onPress={() => alert('clicked')} />
     </View>
   );
 }
