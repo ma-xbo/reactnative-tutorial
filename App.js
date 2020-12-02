@@ -6,9 +6,9 @@ import Random from './components/Random';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Counter startValue='0' />
-      <Counter startValue='10' />
-      <Counter startValue='100' />
+      <Counter startValue={0} />
+      <Counter startValue={10} />
+      <Counter startValue={100} />
       <Random />
     </View>
   );
@@ -17,6 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#2c3e50',
     alignItems: 'center',
     justifyContent: 'center'
   },

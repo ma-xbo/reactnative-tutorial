@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function Random() {
-    let startValue = getRandomInt(99);
+    const maxValue = 99;
+    const [counterValue, setCounterValue] = useState(getRandomInt(maxValue))
 
     return (
-        <View>
-            <Text style={styles.counter}>{startValue}</Text>
-            <Button title='Gernerate Random' onPress={() => alert('clicked')} />
+        <View style={styles.wrapper}>
+            <Text style={styles.counter}>{counterValue}</Text>
+            <Button title='Gernerate Random' onPress={() => setCounterValue(getRandomInt(maxValue))} />
         </View>
     );
 }
@@ -20,8 +21,17 @@ function getRandomInt(max) {
 }
 
 const styles = StyleSheet.create({
+    wrapper: {
+        backgroundColor: '#f25e65',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 200,
+        margin: 5,
+        borderRadius: 10
+
+    },
     counter: {
-        color: 'lightgrey',
+        color: '#261926',
         fontSize: 82
     }
 });
