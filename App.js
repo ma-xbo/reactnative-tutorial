@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 import Counter from './components/Counter';
+import Random from './components/Random';
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Counter startValue='0' />
       <Counter startValue='10' />
       <Counter startValue='100' />
+      <Random />
     </View>
   );
 }

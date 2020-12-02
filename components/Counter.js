@@ -11,7 +11,7 @@ export default function Counter(props) {
     return (
         <View>
             <Text style={styles.counter}>{startValue}</Text>
-            <Button title='Klick' onPress={() => alert('clicked')} />
+            <Button title='Counter +1' onPress={() => alert('clicked')} />
         </View>
     );
 }
